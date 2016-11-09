@@ -124,11 +124,11 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
         cf create-service-key cloudantNoSQLDB-service myKey
         cf service-key cloudantNoSQLDB-service myKey
 
-12. A file named `.env` file is used to provide the service keys for your service instances to the application. Create a `.env` file in the root directory of your clone of the project repository by copying the sample `.env.example` file using the following command:
+17. A file named `.env` file is used to provide the service keys for your service instances to the application. Create a `.env` file in the root directory of your clone of the project repository by copying the sample `.env.example` file using the following command:
 
         cp .env.example .env
 
-    You will update the `.env` with the information you retrieved in steps 11 - 16.
+    You will update the `.env` with the information you retrieved in steps 12 - 16.
 
     The `.env` file will look something like the following:
     
@@ -165,7 +165,7 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
       TWILIO_IPM_SERVICE_SID=<br>
       TWILIO_NUMBER=<br>
 
-13. For Cloudant, use the Cloudant DB console to create a new database called **"botdb"**. 
+18. For Cloudant, use the Cloudant DB console to create a new database called **"botdb"**. 
 
     1.  Login to [Bluemix](https://console.ng.bluemix.net/)
     
@@ -183,9 +183,9 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
     
     8.  Name the database “botdb” and select “Create”
 
-14. For Weather Lookup, replace the Weather URL value in your .env with https://twcservice.mybluemix.net/api/weather 
+19. For Weather Lookup, replace the Weather URL value in your .env with https://twcservice.mybluemix.net/api/weather 
 
-15. The Conversation service must be trained before you can successfully use this application. The training data is provided in the file `resources/conversation-training-data.json` in your checkout of the repository. To train the model used by the Conversation service for this SK, do the following:
+20. The Conversation service must be trained before you can successfully use this application. The training data is provided in the file `resources/conversation-training-data.json` in your checkout of the repository. To train the model used by the Conversation service for this SK, do the following:
 
     1. Login to Bluemix
 
@@ -207,13 +207,13 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
 
 ##Deploying your Bot to Bluemix    
 
-14. Using command line or terminal, push the updated application live by running the following command from your working directory:Push the updated application live by running the following command:
+21. Using command line or terminal, push the updated application live by running the following command from your working directory:Push the updated application live by running the following command:
 
     cf login https://api.ng.bluemix.net
 
     cf push
 
-15. Make sure the cf push command completes successfully using your Bluemix login.  You should go back into your Conversation Service in Blue mix to make sure the training is done. Do the following:
+22. Make sure the cf push command completes successfully using your Bluemix login.  You should go back into your Conversation Service in Blue mix to make sure the training is done. Do the following:
 
   a.  Login to Bluemix
 
@@ -225,9 +225,9 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
   
   e.  Select the name of your app
 
-16. On the next window – you will see a graphic with three dots on the far upper-right-hand side – if you click that you will see if it is done training or not. Once that is complete you can actually see content when you run your applications (assuming you have pushed the application to Bluemix)
+23. On the next window – you will see a graphic with three dots on the far upper-right-hand side – if you click that you will see if it is done training or not. Once that is complete you can actually see content when you run your applications (assuming you have pushed the application to Bluemix)
 
-17. The final message should indicate if the application is deployed successfully and it is started without errors.
+24. The final message should indicate if the application is deployed successfully and it is started without errors.
 
 ## Testing your bots
 
