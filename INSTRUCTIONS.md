@@ -131,8 +131,7 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
     You will update the `.env` with the information you retrieved in steps 8 - 11.
 
     The `.env` file will look something like the following:
-
-
+    
       USE_WEBUI=true
       ALCHEMY_API_KEY=
 
