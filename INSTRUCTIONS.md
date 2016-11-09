@@ -30,7 +30,7 @@ To start, we will build a simple app using node.js runtime and host it on Bluemi
 
 ## Installation
 
-This is a Starter Kit (SK), which is designed to get you up and running quickly with a common industry pattern, and to provide information and best practices around Watson services and bots. This application demonstrates how the Conversation service can be used with different bot kits such as those from Facebook and Twilio to enable users to have an intuitive and natural conversation with the bots. This use case for this starter kit is around discussing the weather. The starter kit uses the WeatherInsights service to gather weather data and provide forecasts.
+This is a lab is designed to get you up and running quickly with a common industry pattern, and to provide information and best practices around Watson services and bots. This application demonstrates how the Conversation service can be used with different bot kits such as those from Facebook and Twilio to enable users to have an intuitive and natural conversation with the bots. This use case for this starter kit is around discussing the weather. The starter kit uses the WeatherInsights service to gather weather data and provide forecasts.
 
 A running instance of the application in this Starter Kit is available as a [demo](https://text-bot.mybluemix.net). The demo does not include Facebook or Twilio integration. Running the application using the Facebook and Twilio bots requires credentials to access their services. For information about obtaining credentials and integrating Twilio and Facebook bots, see [Installing the bots](#bot-installation).
 
@@ -48,9 +48,9 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
 
 5. Open a terminal window
 
-6. mkdir $WORKDIR
+6. mkdir <WORKDIR>
 
-7. cd $WORKDIR
+7. cd <WORKDIR>
 
 8. git clone https://github.com/watson-developer-cloud/WDC-textbot.git
  
@@ -131,6 +131,7 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
     You will update the `.env` with the information you retrieved in steps 8 - 11.
 
     The `.env` file will look something like the following:
+
 
       USE_WEBUI=true
       ALCHEMY_API_KEY=
