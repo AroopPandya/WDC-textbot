@@ -78,14 +78,14 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
           path: .
           memory: 512M
 
-6. Connect to Bluemix by running the following commands in a terminal window:
+11. Connect to Bluemix by running the following commands in a terminal window:
 
      ```bash
      cf api https://api.ng.bluemix.net
      cf login -u <your-Bluemix-ID> -p <your-Bluemix-password>
      ```
 
-7. Create instances of the services that are used by the application. If you already have instances of the Alchemy Language service, you can use that instances and its API key:
+12. Create instances of the services that are used by the application. If you already have instances of the Alchemy Language service, you can use that instances and its API key:
 
      - Create an instance of the [Conversation](http://www.ibm.com/watson/developercloud/doc/conversation/) service by running the following command:
 
@@ -103,23 +103,23 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
 
         cf create-service cloudantNoSQLDB Lite cloudantNoSQLDB-service
 
-8. Create and retrieve service keys to access the Conversation service:
+13. Create and retrieve service keys to access the Conversation service:
 
         cf create-service-key conversation-service myKey
         cf service-key conversation-service myKey
 
-9. Create and retrieve service keys to access the WeatherInsights service:
+14. Create and retrieve service keys to access the WeatherInsights service:
 
         cf create-service-key weatherinsights-service myKey
         cf service-key weatherinsights-service myKey
 
 
-10. Create and retrieve service keys for the Alchemy Language service:
+15. Create and retrieve service keys for the Alchemy Language service:
 
         cf create-service-key alchemy-language-service myKey
         cf service-key alchemy-language-service myKey
 
-11. Create and retrieve service keys for the Cloudant service:
+16. Create and retrieve service keys for the Cloudant service:
 
         cf create-service-key cloudantNoSQLDB-service myKey
         cf service-key cloudantNoSQLDB-service myKey
@@ -128,7 +128,7 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
 
         cp .env.example .env
 
-    You will update the `.env` with the information you retrieved in steps 8 - 11.
+    You will update the `.env` with the information you retrieved in steps 11 - 16.
 
     The `.env` file will look something like the following:
     
