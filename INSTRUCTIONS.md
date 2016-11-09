@@ -131,40 +131,39 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
     You will update the `.env` with the information you retrieved in steps 8 - 11.
 
     The `.env` file will look something like the following:
-    `
-      USE_WEBUI=true
-      ALCHEMY_API_KEY=
+    
+      USE_WEBUI=true<br>
+      ALCHEMY_API_KEY=<br>
 
-      #CONVERSATION
-      CONVERSATION_URL=https://gateway.watsonplatform.net/conversation/api
-      CONVERSATION_USERNAME=
-      CONVERSATION_PASSWORD=
-      WORKSPACE_ID=
+      #CONVERSATION<br>
+      CONVERSATION_URL=https://gateway.watsonplatform.net/conversation/api<br>
+      CONVERSATION_USERNAME=<br>
+      CONVERSATION_PASSWORD=<br>
+      WORKSPACE_ID=<br>
 
-      #WEATHER
-      WEATHER_URL=https://twcservice.mybluemix.net/api/weather
-      WEATHER_USERNAME=
-      WEATHER_PASSWORD=
+      #WEATHER<br>
+      WEATHER_URL=https://twcservice.mybluemix.net/api/weather<br>
+      WEATHER_USERNAME=<br>
+      WEATHER_PASSWORD=<br>
 
 
-      #CLOUDANT
-      CLOUDANT_URL=
+      #CLOUDANT<br>
+      CLOUDANT_URL=<br>
 
-      #FACEBOOK
-      USE_FACEBOOK=false
-      FACEBOOK_ACCESS_TOKEN=
-      FACEBOOK_VERIFY_TOKEN=
+      #FACEBOOK<br>
+      USE_FACEBOOK=false<br>
+      FACEBOOK_ACCESS_TOKEN=<br>
+      FACEBOOK_VERIFY_TOKEN=<br>
 
-      #TWILIO
-      USE_TWILIO=false
-      USE_TWILIO_SMS=false
-      TWILIO_ACCOUNT_SID=
-      TWILIO_AUTH_TOKEN=
-      TWILIO_API_KEY=
-      TWILIO_API_SECRET=
-      TWILIO_IPM_SERVICE_SID=
-      TWILIO_NUMBER=
-`
+      #TWILIO<br>
+      USE_TWILIO=false<br>
+      USE_TWILIO_SMS=false<br>
+      TWILIO_ACCOUNT_SID=<br>
+      TWILIO_AUTH_TOKEN=<br>
+      TWILIO_API_KEY=<br>
+      TWILIO_API_SECRET=<br>
+      TWILIO_IPM_SERVICE_SID=<br>
+      TWILIO_NUMBER=<br>
 
 13. For Cloudant, use the Cloudant DB console to create a new database called **"botdb"**. 
 
