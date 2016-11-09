@@ -95,8 +95,6 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
 
         cf create-service alchemy_api free alchemy-language-service
 
-        **IMPORTANT:** This application performs best when you use an Alchemy API key that supports high transaction limits. The free Alchemy API key has a limit of 1000 transactions per day.  You can upgrade to the Standard or Advanced Plan of the Alchemy API service to obtain a key that supports more than 1000 transactions per day. To upgrade to the Standard or Advanced plans, you will need to add a credit card to your Bluemix account. For plan and pricing information, click [here](https://console.ng.bluemix.net/catalog/services/alchemyapi/).
-
     - Create an instance of the [Weather Insights service](https://console.ng.bluemix.net/docs/services/InsightsWeather/index.html) by running the following command:
 
         cf create-service weatherinsights Free-v2 weatherinsights-service
@@ -115,7 +113,6 @@ This application is written in [Node.js](http://nodejs.org/) and uses the [npm](
         cf create-service-key weatherinsights-service myKey
         cf service-key weatherinsights-service myKey
 
-    **IMPORTANT:** The Free plan for the WeatherInsights service provides a username and password as part of its service key. To take advantage of the full capabilities of the application in this starter kit, you should use an instance of the WeatherInsights service that supports high transaction limits. To be able to reach those limits, you will need to upgrade to the service's Standard or Premium plans because the pricing model for this service is based on the maximum number of API calls that you can make to the service per minute. The Premium plan is ideal. If you upgrade to the Standard or Premium plans, you will receive and API key rather than username and password credentials. To upgrade to the Standard or Premium plans, you will need to add a credit card to your Bluemix account. For plan and pricing information, click [here](https://console.ng.bluemix.net/catalog/services/weather-company-data/).
 
 10. Create and retrieve service keys for the Alchemy Language service:
 
